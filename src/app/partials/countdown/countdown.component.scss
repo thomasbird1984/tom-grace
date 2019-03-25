@@ -1,0 +1,28 @@
+.Countdown {
+  color: #fff;
+  display: flex;
+  padding: 15px 25px;
+  border-radius: 3px;
+  background: linear-gradient(#FE83A2, #FC537E);
+
+  &__column {
+    flex: 1;
+    text-align: center;
+
+    &--text {
+      font-size: 44px;
+      font-weight: 600;
+    }
+
+    &--title {
+      font-size: 12px;
+      font-weight: 100;
+      text-transform: lowercase;
+    }
+
+    &.divider {
+      font-size: 50px;
+      font-weight: 100;
+    }
+  }
+}

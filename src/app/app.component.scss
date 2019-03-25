@@ -1,0 +1,58 @@
+.Shell {
+  &__row {
+    &-inner {
+      width: 1170px;
+      display: flex;
+      margin: 0 auto;
+    }
+  }
+
+  &__column {
+    flex: 1;
+  }
+}
+
+.section {
+  &--hero {
+    height: 500px;
+    background: url(/assets/images/country-couple.jpg) no-repeat center top;
+
+    .Shell__column {
+      color: #fff;
+      text-align: center;
+
+      h2,
+      h1,
+      h3 {
+        text-shadow: 0 1px 3px rgba(0, 0, 0, .25);
+      }
+
+      h2 {
+        font-size: 52px;
+        margin-top: 100px;
+        margin-bottom: -10px;
+      }
+
+      h1 {
+        font-size: 32px;
+        text-transform: lowercase;
+      }
+
+      h3 {
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: lowercase;
+      }
+    }
+  }
+}
+
+@media(max-width: 1170px) {
+  .Shell {
+    &__row {
+      &-inner {
+        width: 100%;
+      }
+    }
+  }
+}
