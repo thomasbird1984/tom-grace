@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
 import { CommonModule } from '@angular/common';
 
 // Import dependency modules
+import { PartialsModule } from '../partials/partials.module';
 
 // Import the individual views
 import { HomeComponent } from './home/home.component';
@@ -34,6 +34,7 @@ const routes: Routes = [
 @NgModule({
   imports: [
     CommonModule,
+    PartialsModule,
     RouterModule.forRoot(routes)
   ],
   declarations: [

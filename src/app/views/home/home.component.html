@@ -1,18 +1,104 @@
+<div class="Shell__row section--story">
+
+  <div class="Shell__row-inner">
+    <div class="Shell__column">
+      <h2>Our Story</h2>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad debitis esse magnam odio possimus reiciendis
+        tempora vero! Ad, amet architecto consequatur culpa, eveniet id laudantium magnam minus nam nisi odit.</p>
+      <p>Asperiores dignissimos earum eius fuga minus quo quos recusandae sapiente sit veniam? Accusamus alias amet
+        assumenda, autem exercitationem harum impedit laborum libero molestias natus nihil placeat quas ratione sunt
+        voluptatum!</p>
+      <p>Eos fugit illo incidunt minima nulla numquam odio pariatur quidem sunt veniam. A amet asperiores doloremque,
+        eos est laborum obcaecati quibusdam reiciendis sequi vel. Beatae consequatur distinctio odit optio
+        veritatis?</p>
+    </div>
+  </div>
+</div>
+
+<div class="Shell__row section--bride-groom">
+  <div class="Shell__row-inner">
+    <div class="Shell__column">
+      <h2>The Bride</h2>
+      <h4>{{ bride.firstName }} {{ bride.lastName }}</h4>
+
+      <p [innerHTML]="bride.description"></p>
+    </div>
+    <div class="Shell__column">
+      <h2>The Groom</h2>
+      <h4>{{ groom.firstName }} {{ groom.lastName }}</h4>
+
+      <p [innerHTML]="groom.description"></p>
+    </div>
+  </div>
+
+</div>
+
 <div class="Shell__row">
   <div class="Shell__row-inner">
     <div class="Shell__column">
-      <h2>The Groom</h2>
-      <h4>Thomas Kim Bird</h4>
-
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aspernatur blanditiis distinctio ducimus illum iste iusto neque obcaecati praesentium quasi, quidem quisquam quos velit. Amet architecto cupiditate hic obcaecati voluptatibus.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aspernatur blanditiis distinctio ducimus illum iste iusto neque obcaecati praesentium quasi, quidem quisquam quos velit.</p>
+      <div class="row">
+        <app-party
+          *ngFor="let bridesmaid of bridesmaids"
+          [party]="bridesmaid"
+        ></app-party>
+      </div>
     </div>
     <div class="Shell__column">
-      <h2>The Bride</h2>
-      <h4>Grace Mary Choi</h4>
+      <div class="row">
+        <app-party
+          *ngFor="let groomsmen of groomsmens"
+          [party]="groomsmen"
+        ></app-party>
+      </div>
+    </div>
+  </div>
+</div>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aspernatur blanditiis distinctio ducimus illum iste iusto neque obcaecati praesentium quasi, quidem quisquam quos velit. Amet architecto cupiditate hic obcaecati voluptatibus.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aspernatur blanditiis distinctio ducimus illum iste iusto neque obcaecati praesentium quasi, quidem quisquam quos velit.</p>
+<div class="Shell__row">
+  <div class="Shell__row-inner">
+    <div class="Shell__column">
+      <h2>Ceremony</h2>
+    </div>
+  </div>
+</div>
+
+<div class="Shell__row">
+  <div class="Shell__row-inner">
+    <div class="Shell__column">
+      Media
+    </div>
+  </div>
+</div>
+
+<div class="Shell__row">
+  <div class="Shell__row-inner">
+    <div class="Shell__column">
+      Celebration
+    </div>
+  </div>
+</div>
+
+<div class="Shell__row">
+  <div class="Shell__row-inner">
+    <div class="Shell__column">
+      RSVP
+    </div>
+  </div>
+</div>
+
+<div class="Shell__row">
+  <div class="Shell__row-inner">
+    <div class="Shell__column">
+      Music
+    </div>
+  </div>
+</div>
+
+<div class="Shell__row">
+  <div class="Shell__row-inner">
+    <div class="Shell__column">
+      Registry
     </div>
   </div>
 </div>

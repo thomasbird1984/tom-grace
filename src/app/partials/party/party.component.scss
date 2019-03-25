@@ -1,0 +1,35 @@
+.party {
+  display: flex;
+  padding: 10px;
+
+  &--bridesmaid,
+  &--groomsmen {
+    flex: 0 0 50%;
+
+    img {
+      width: 50px;
+      max-height: 50px;
+      border-width: 5px;
+      margin-right: 10px;
+      border-style: solid;
+      border-radius: 100%;
+    }
+
+    p {
+      font-size: .9rem;
+      margin: 0;
+    }
+  }
+
+  &--bridesmaid {
+    img {
+      border-color: #FE83A2;
+    }
+  }
+
+  &--groomsmen {
+    img {
+      border-color: cornflowerblue;
+    }
+  }
+}

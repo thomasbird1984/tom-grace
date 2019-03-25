@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CountdownComponent } from './countdown/countdown.component';
+import { PartyComponent } from './party/party.component';
 
 @NgModule({
   imports: [
@@ -8,9 +9,11 @@ import { CountdownComponent } from './countdown/countdown.component';
   ],
   declarations: [
     CountdownComponent,
+    PartyComponent,
   ],
   exports: [
     CountdownComponent,
+    PartyComponent
   ]
 })
 export class PartialsModule { }

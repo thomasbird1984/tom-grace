@@ -11,3 +11,12 @@
     flex: 1;
   }
 }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+app-party {
+  flex: 0 0 50%;
+}
