@@ -1,6 +1,9 @@
 <div [ngClass]="['party', party.type === 'bridesmaid' ? 'party--bridesmaid' : 'party--groomsmen']">
   <img src="/assets/images/{{ party.img }}"/>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias, amet architecto atque consectetur
-    dicta exercitationem hic illum ipsa minima necessitatibus non nulla omnis quaerat quo rerum sit voluptatem
-    voluptatum.</p>
+  <div class="party--description">
+    <h3>{{ party.firstName }} {{ party.lastName }}</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias, amet architecto atque consectetur
+      dicta exercitationem hic illum ipsa minima necessitatibus non nulla omnis quaerat quo rerum sit voluptatem
+      voluptatum.</p>
+  </div>
 </div>
