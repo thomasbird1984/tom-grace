@@ -1,0 +1,13 @@
+.Shell {
+  &__row {
+    &-inner {
+      width: 1170px;
+      display: flex;
+      margin: 0 auto;
+    }
+  }
+
+  &__column {
+    flex: 1;
+  }
+}

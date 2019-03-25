@@ -8,6 +8,9 @@ import { CountdownComponent } from './countdown/countdown.component';
   ],
   declarations: [
     CountdownComponent,
+  ],
+  exports: [
+    CountdownComponent,
   ]
 })
 export class PartialsModule { }
