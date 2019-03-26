@@ -20,3 +20,24 @@
 app-party {
   flex: 0 0 50%;
 }
+
+.form {
+  &--rsvp {
+    display: flex;
+    flex-direction: column;
+
+    input[type="email"] {
+      padding: 10px 10px;
+    }
+  }
+}
+
+@media(max-width: 1170px) {
+  .Shell {
+    &__row {
+      &-inner {
+        width: 100%;
+      }
+    }
+  }
+}
