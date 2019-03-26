@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 // Import Dependency modules
 import { ViewsModule } from './views/views.module';
+import { PartialsModule } from './partials/partials.module';
 
 import { AppComponent } from './app.component';
 
@@ -10,6 +11,7 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     ViewsModule,
+    PartialsModule,
   ],
   exports: [],
   providers: [],

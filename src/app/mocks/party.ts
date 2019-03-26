@@ -24,6 +24,7 @@ export const MOCK_PARTY: Party[] = [
     firstName: 'Joey',
     lastName: 'Genovese',
     nickName: '',
+    description: '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid corporis, deserunt enim excepturi facilis fugit ipsa nihil nulla officia quod rem reprehenderit</p>',
     img: 'groomsmen.jpg',
     type: PartyType.groomsmen
   },
@@ -32,6 +33,7 @@ export const MOCK_PARTY: Party[] = [
     firstName: 'Kyle',
     lastName: 'Lucas',
     nickName: '',
+    description: '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid corporis, deserunt enim excepturi facilis fugit ipsa nihil nulla officia quod rem reprehenderit</p>',
     img: 'groomsmen.jpg',
     type: PartyType.groomsmen
   },
@@ -40,6 +42,7 @@ export const MOCK_PARTY: Party[] = [
     firstName: 'Stefan',
     lastName: 'Munck',
     nickName: '',
+    description: '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid corporis, deserunt enim excepturi facilis fugit ipsa nihil nulla officia quod rem reprehenderit</p>',
     img: 'groomsmen.jpg',
     type: PartyType.groomsmen
   },
@@ -48,6 +51,7 @@ export const MOCK_PARTY: Party[] = [
     firstName: 'Lauren',
     lastName: 'G',
     nickName: '',
+    description: '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid corporis, deserunt enim excepturi facilis fugit ipsa nihil nulla officia quod rem reprehenderit</p>',
     img: 'bridesmaid.jpg',
     type: PartyType.bridesmaid
   },
@@ -56,6 +60,7 @@ export const MOCK_PARTY: Party[] = [
     firstName: 'Mandy',
     lastName: 'S',
     nickName: '',
+    description: '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid corporis, deserunt enim excepturi facilis fugit ipsa nihil nulla officia quod rem reprehenderit</p>',
     img: 'bridesmaid.jpg',
     type: PartyType.bridesmaid
   }
