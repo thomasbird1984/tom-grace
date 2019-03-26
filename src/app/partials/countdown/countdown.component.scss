@@ -1,9 +1,14 @@
 .Countdown {
+  left: 0;
+  bottom: 0;
   color: #fff;
+  width: 100%;
   display: flex;
   padding: 15px 25px;
   border-radius: 3px;
-  background: linear-gradient(#FE83A2, #FC537E);
+  position: absolute;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, .5);
 
   &__column {
     flex: 1;
@@ -12,12 +17,14 @@
     &--text {
       font-size: 44px;
       font-weight: 600;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, .5);
     }
 
     &--title {
       font-size: 12px;
       font-weight: 100;
       text-transform: lowercase;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, .5);
     }
 
     &.divider {

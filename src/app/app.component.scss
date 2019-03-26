@@ -1,6 +1,7 @@
 .section {
   &--hero {
     height: 500px;
+    position: relative;
     background: url(/assets/images/country-couple.jpg) no-repeat center top;
 
     .Shell__column {

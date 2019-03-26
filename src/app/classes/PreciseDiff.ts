@@ -1,3 +1,7 @@
+/**
+ * PreciseDiff is built based off of the package moment-precise-range
+ * https://github.com/codebox/moment-precise-range
+ */
 import * as moment from 'moment';
 
 interface DateTime {
