@@ -1,26 +1,26 @@
 <div class="Countdown">
   <p *ngIf="this.text">{{ this.text }}</p>
   <div class="Countdown__duration-display">
-    <div class="Countdown__column" *ngIf="this.datetime.years > 0">
+    <div *ngIf="this.datetime.years > 0" class="Countdown__column">
       <span class="Countdown__column--text">{{ this.datetime.years }}</span>
       <h3 class="Countdown__column--title">Years</h3>
     </div>
 
     <div *ngIf="this.datetime.years > 0" class="Countdown__column divider">:</div>
 
-    <div class="Countdown__column" *ngIf="this.datetime.months > 0">
+    <div *ngIf="this.datetime.months > 0" class="Countdown__column">
       <span class="Countdown__column--text">{{ this.datetime.months }}</span>
       <h3 class="Countdown__column--title">Months</h3>
     </div>
 
     <div *ngIf="this.datetime.months > 0" class="Countdown__column divider">:</div>
 
-    <div class="Countdown__column">
+    <div *ngIf="this.datetime.days > 0" class="Countdown__column">
       <span class="Countdown__column--text">{{ this.datetime.days }}</span>
       <h3 class="Countdown__column--title">Days</h3>
     </div>
 
-    <div class="Countdown__column divider">:</div>
+    <div *ngIf="this.datetime.days > 0" class="Countdown__column divider">:</div>
 
     <div class="Countdown__column">
       <span class="Countdown__column--text">{{ this.datetime.hours }}</span>

@@ -13,10 +13,10 @@ export class MusicComponent implements OnInit {
   constructor(
     private api: ApiService
   ) {
-    this.api.getSongsAll().subscribe(songs => {
-      console.log('songs', songs);
-      this.musicList = songs;
-    });
+    // this.api.getSongsAll().subscribe(songs => {
+    //   console.log('songs', songs);
+    //   this.musicList = songs;
+    // });
   }
 
   ngOnInit() {

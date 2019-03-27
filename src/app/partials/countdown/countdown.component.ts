@@ -41,7 +41,7 @@ export class CountdownComponent {
 
   calculateTimeLeft() {
     const now = moment();
-    const endDate = moment(this.endDate);
+    const endDate = moment(this.endDate, 'YYYY-MM-DD HH:mm:SS A');
 
     const diff = this.diffTool.precisionDiffObj(now, endDate);
 
