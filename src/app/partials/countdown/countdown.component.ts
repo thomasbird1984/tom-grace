@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input } from '@angular/core';
 import * as moment from 'moment';
 import { PreciseDiff } from '../../classes/PreciseDiff';
 
@@ -16,7 +16,9 @@ interface DateTime {
   templateUrl: './countdown.component.html',
   styleUrls: ['./countdown.component.scss']
 })
-export class CountdownComponent implements OnInit {
+export class CountdownComponent {
+  @Input() text: string | undefined;
+  @Input() endDate: string;
 
   datetime: DateTime = {
     years: 0,
@@ -33,16 +35,13 @@ export class CountdownComponent implements OnInit {
     this.countdown();
   }
 
-  ngOnInit() {
-  }
-
   countdown() {
     setInterval(this.calculateTimeLeft.bind(this), 1000);
   }
 
   calculateTimeLeft() {
     const now = moment();
-    const endDate = moment('2021-06-01 04:20:00 PM');
+    const endDate = moment(this.endDate);
 
     const diff = this.diffTool.precisionDiffObj(now, endDate);
 
