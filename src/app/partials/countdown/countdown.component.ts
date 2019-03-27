@@ -9,6 +9,7 @@ interface DateTime {
   hours: number;
   minutes: number;
   seconds: number;
+  firstDayWasLater: boolean;
 }
 
 @Component({
@@ -26,8 +27,11 @@ export class CountdownComponent {
     days: 0,
     hours: 0,
     minutes: 0,
-    seconds: 0
+    seconds: 0,
+    firstDayWasLater: false
   };
+
+  isShown = false;
 
   diffTool = new PreciseDiff();
 
@@ -51,7 +55,10 @@ export class CountdownComponent {
       days: diff.days,
       hours: diff.hours,
       minutes: diff.minutes,
-      seconds: diff.seconds
+      seconds: diff.seconds,
+      firstDayWasLater: diff.firstDateWasLater
     };
+
+    this.isShown = true;
   }
 }

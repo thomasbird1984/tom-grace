@@ -1,11 +1,11 @@
 <div class="Shell__row section--navigation">
   <div class="Shell__row-inner">
     <div class="Shell__column">
-      <div class="branding">
+      <div class="branding animated slideInLeft">
         <h1>Grace + Tom</h1>
         <small>Saturday August 17th, 2019</small>
       </div>
-      <ul>
+      <ul class="animated slideInRight">
         <li><a routerLink="/">Home</a></li>
         <li><a routerLink="/rsvp">RSVP</a></li>
         <li><a routerLink="/music">Music</a></li>
@@ -19,8 +19,10 @@
   <div class="overlay overlay__black"></div>
   <div class="Shell__row-inner">
     <div class="Shell__column">
-      <h2>Still Can't Believe It, She Said Yes! We're Getting</h2>
-      <h1>Married!</h1>
+      <div class="animated fadeInDown">
+        <h2>Still Can't Believe It, She Said Yes! We're Getting</h2>
+        <h1>Married!</h1>
+      </div>
 
       <app-countdown
         *ngIf="this.url === '/'"

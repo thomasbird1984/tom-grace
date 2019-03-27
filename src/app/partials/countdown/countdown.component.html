@@ -1,4 +1,4 @@
-<div class="Countdown">
+<div *ngIf="this.isShown" [classList]="['Countdown animated fadeIn']">
   <p *ngIf="this.text">{{ this.text }}</p>
   <div class="Countdown__duration-display">
     <div *ngIf="this.datetime.years > 0" class="Countdown__column">
