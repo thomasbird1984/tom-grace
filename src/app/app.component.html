@@ -1,19 +1,10 @@
-<div class="Shell__row section--hero">
-  <div class="Shell__row-inner">
-    <div class="Shell__column">
-      <h2>Thomas & Grace</h2>
-
-      <h1>We're getting married!</h1>
-      <h3>August 17th, 2019 in Detroit, MI</h3>
-
-      <app-countdown></app-countdown>
-    </div>
-  </div>
-</div>
-
 <div class="Shell__row section--navigation">
   <div class="Shell__row-inner">
     <div class="Shell__column">
+      <div class="branding">
+        <h1>Grace + Tom</h1>
+        <small>Saturday August 17th, 2019</small>
+      </div>
       <ul>
         <li><a routerLink="/">Home</a></li>
         <li><a routerLink="/rsvp">RSVP</a></li>
@@ -24,12 +15,27 @@
   </div>
 </div>
 
-<router-outlet></router-outlet>
-
-<div class="Shell__row section--navigation">
+<div [ngClass]="['Shell__row section--hero', this.url !== '/' ? 'inside' : '']">
+  <div class="overlay overlay__black"></div>
   <div class="Shell__row-inner">
     <div class="Shell__column">
-      <h5>Footer</h5>
+      <h2>Still Can't Believe It, She Said Yes! We're Getting</h2>
+      <h1>Married</h1>
+
+      <app-countdown
+        *ngIf="this.url === '/'"
+        endDate="2021-06-01 04:20:00 PM"
+      ></app-countdown>
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
+
+<div class="Shell__row section--footer">
+  <div class="Shell__row-inner">
+    <div class="Shell__column">
+      <h4>Footer</h4>
     </div>
   </div>
 </div>

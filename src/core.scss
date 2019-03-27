@@ -32,6 +32,19 @@ app-party {
   }
 }
 
+.overlay {
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+
+  &__black {
+    background: rgba(0, 0, 0, .5);
+  }
+}
+
 @media(max-width: 1170px) {
   .Shell {
     &__row {
