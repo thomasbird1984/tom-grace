@@ -1,10 +1,12 @@
+@import "./sass/variables";
+
 .section {
   &--navigation {
     top: 0;
     width: 100%;
     z-index: 100;
     position: fixed;
-    background: #fff;
+    background: $color-white;
 
     .Shell__column {
       display: flex;
@@ -27,7 +29,7 @@
       }
 
       small {
-        color: #aaa;
+        color: $color-grey-medium;
         font-size: .8rem;
         font-weight: 400;
         margin: 18px 10px;
@@ -41,7 +43,7 @@
       list-style: none;
 
       a {
-        color: #aaa;
+        color: $color-grey-medium;
         display: flex;
         cursor: pointer;
         font-size: .7rem;
@@ -53,9 +55,8 @@
         border-bottom: 1px solid transparent;
 
         &:hover {
-          color: #333;
-          border-bottom: 1px solid #333;
-          // background: #f5f5f5;
+          color: $color-grey-dark;
+          border-bottom: 1px solid $color-grey-dark;
         }
       }
     }
@@ -71,7 +72,7 @@
     }
 
     .Shell__column {
-      color: #fff;
+      color: $color-white;
       text-align: center;
       z-index: 2;
 
@@ -85,6 +86,7 @@
       }
 
       h2 {
+        color: $color-grey-light;
         margin-top: 60px;
         font-size: 1.6rem;
         margin-bottom: -10px;
@@ -92,6 +94,7 @@
 
       h1 {
         margin: 0;
+        color: $color-white;
         font-size: 5rem;
         font-weight: 400;
       }

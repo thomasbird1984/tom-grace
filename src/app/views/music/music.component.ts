@@ -8,7 +8,7 @@ import { ApiService } from '../../services/api.service';
   styleUrls: ['./music.component.scss']
 })
 export class MusicComponent implements OnInit {
-  protected musicList: MusicListItem[];
+  protected musicList: MusicListItem[] | any;
 
   constructor(
     private api: ApiService
