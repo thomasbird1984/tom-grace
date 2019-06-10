@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ActivatedRoute} from '@angular/router';
 
 @Component({
   selector: 'app-rsvp',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./rsvp.component.scss']
 })
 export class RsvpComponent implements OnInit {
+  rsvp: any;
 
-  constructor() { }
+  constructor(
+    private route: ActivatedRoute
+  ) { }
 
   ngOnInit() {
+    const userId = this.route.snapshot.paramMap.get('user_id');
+    this.rsvp = userId || 'Null';
   }
 
 }

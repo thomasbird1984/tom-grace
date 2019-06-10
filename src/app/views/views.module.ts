@@ -26,6 +26,10 @@ const routes: Routes = [
     component: RsvpComponent
   },
   {
+    path: 'rsvp/:user_id',
+    component: RsvpComponent
+  },
+  {
     path: 'registry',
     component: RegistryComponent
   }
