@@ -1,3 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-@import "./resets.scss";
-@import "./core.scss";
+@import "./sass/variables";
+@import "./sass/mixins";
+@import "./sass/resets.scss";
+@import "./sass/core.scss";

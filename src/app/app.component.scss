@@ -1,25 +1,30 @@
+@import "~src/sass/variables";
+
 .section {
   &--hero {
     height: 500px;
-    background: url(/assets/images/country-couple.jpg) no-repeat center top;
+    background-size: cover;
+    background-attachment: fixed;
+    background: url(/assets/images/main-hero.jpg) no-repeat center top;
 
     .Shell__column {
-      color: #fff;
+      color: $white;
       text-align: center;
 
       h2,
       h1,
       h3 {
-        text-shadow: 0 1px 3px rgba(0, 0, 0, .25);
+        text-shadow: 0 1px 3px rgba(255,255,255, .25);
       }
 
       h2 {
-        font-size: 52px;
+        font-size: 82px;
         margin-top: 100px;
         margin-bottom: -10px;
       }
 
       h1 {
+        margin: 0;
         font-size: 32px;
         text-transform: lowercase;
       }
@@ -33,6 +38,8 @@
   }
 
   &--navigation {
+    background: $blue;
+
     ul {
       margin: 0;
       padding: 0;
@@ -40,7 +47,7 @@
       list-style: none;
 
       a {
-        color: #666;
+        color: $pink;
         display: flex;
         padding: 10px 15px;
         text-decoration: none;
