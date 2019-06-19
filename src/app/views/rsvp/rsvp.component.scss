@@ -1,0 +1,78 @@
+@import "~src/sass/variables";
+@import "~src/sass/mixins";
+
+.section {
+  padding: 75px 0;
+}
+
+.FormGroup {
+  display: flex;
+  margin-bottom: 15px;
+  flex-direction: column;
+
+  &__inline {
+    flex-direction: row;
+
+    > * {
+      flex: 1;
+    }
+
+    > *:first-child {
+      margin-right: 10px;
+    }
+  }
+
+  label {
+    color: $color-grey;
+    margin: 0 0 5px;
+    font-size: 0.8rem;
+  }
+
+  &--input-indicator {
+    display: flex;
+
+    input {
+      @include formElement();
+    }
+
+    &-icon {
+      padding: 8px 15px;
+      border-left: 1px solid $color-grey-mid;
+      border-top: 1px solid $color-grey-mid;
+      border-bottom: 1px solid $color-grey-mid;
+    }
+  }
+
+  button:not(.ant-switch) {
+    border-radius: 0;
+    width: fit-content;
+  }
+
+  & > input,
+  & > textarea {
+    @include formElement();
+  }
+
+  input {
+    flex: 1;
+  }
+
+  textarea {
+    height: 100px;
+  }
+
+  &Bundle {
+    display: flex;
+
+    input,
+    select,
+    textarea {
+      flex: 1;
+      @include formElement();
+    }
+  }
+}
+
+.Btn {
+  @include btn();
+}

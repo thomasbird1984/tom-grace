@@ -1,3 +1,34 @@
-<p>
-  rsvp works! {{ rsvp }}
-</p>
+<div class="Shell__row section section section--bride-groom">
+  <div class="Shell__row-inner">
+    <div class="Shell__column">
+      <h2>RSVP</h2>
+      <p>We hope everyone can make it, use the form below</p>
+
+      <div class="FormGroup">
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email" placeholder="Enter your email..." [disabled]="isRsvpDisabled" [(ngModel)]="rsvp" />
+      </div>
+
+      <div class="FormGroup FormGroup__inline">
+        <div class="FormGroup">
+          <label for="coming">Are you able to come?:</label>
+          <select name="coming" [(ngModel)]="coming" id="coming">
+            <option>Select one...</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+
+        <div class="FormGroup" *ngIf="coming === 'yes'">
+          <label for="plusOne">Do you have a plus one?</label>
+          <select name="coming" [(ngModel)]="plusOne" id="plusOne">
+            <option>Select one...</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

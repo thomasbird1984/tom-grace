@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+
 // Import Dependency modules
 import { ViewsModule } from './views/views.module';
 

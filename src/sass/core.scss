@@ -20,3 +20,17 @@
 app-party {
   flex: 0 0 50%;
 }
+
+input[disabled] {
+  cursor: not-allowed;
+}
+
+.text {
+  &-center {
+    text-align: center;
+  }
+
+  &-right {
+    text-align: right;
+  }
+}

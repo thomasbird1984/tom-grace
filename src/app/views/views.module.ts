@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { MusicComponent } from './music/music.component';
 import { RsvpComponent } from './rsvp/rsvp.component';
 import { RegistryComponent } from './registry/registry.component';
+import {FormsModule} from '@angular/forms';
 
 // route definitions
 const routes: Routes = [
@@ -39,7 +40,8 @@ const routes: Routes = [
   imports: [
     CommonModule,
     PartialsModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    FormsModule,
   ],
   declarations: [
     HomeComponent,
